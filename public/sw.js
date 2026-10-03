@@ -1,5 +1,5 @@
-const CACHE_NAME = 'zylva-labs-v2';
-const ASSETS = ['/', '/index.html', '/style.css', '/app.js', '/email-config.js', '/logo.svg', '/manifest.json'];
+const CACHE_NAME = 'zylva-labs-v3';
+const ASSETS = ['/', '/index.html', '/style.css', '/app.js', '/logo.svg', '/manifest.json'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
