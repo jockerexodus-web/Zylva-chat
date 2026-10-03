@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" fill="none">
+  <defs>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="1.5">
+    <path d="M 55 95 L 130 25 L 210 55 L 220 125 L 145 165 L 75 140 Z" stroke="#ffffff"/>
+    <path d="M 80 100 L 135 55 L 190 75 L 195 115 L 150 140 L 95 120 Z" stroke="url(#cyanGrad)"/>
+    <path d="M 115 110 L 160 85" stroke="#ffffff"/>
+    <path d="M 140 145 L 170 105" stroke="url(#cyanGrad)"/>
+    <path d="M 95 65 L 145 45" stroke="url(#cyanGrad)"/>
+    <path d="M 210 55 L 220 125" stroke="#ffffff"/>
+    <path d="M 145 165 L 120 195" stroke="#ffffff"/>
+    <path d="M 75 140 L 55 165" stroke="#ffffff"/>
+    <path d="M 55 95 L 55 160" stroke="#ffffff"/>
+    <path d="M 130 25 L 130 10" stroke="#ffffff"/>
+    <circle cx="115" cy="110" r="3" fill="#ffffff"/>
+    <circle cx="160" cy="85" r="3" fill="#2dd4bf"/>
+    <circle cx="140" cy="145" r="3" fill="#ffffff"/>
+    <circle cx="170" cy="105" r="3" fill="#2dd4bf"/>
+    <circle cx="95" cy="65" r="3" fill="#ffffff"/>
+    <circle cx="145" cy="45" r="3" fill="#2dd4bf"/>
+    <circle cx="55" cy="163" r="2.5" fill="#ffffff"/>
+    <circle cx="120" cy="197" r="2.5" fill="#ffffff"/>
+  </g>
+  <text x="245" y="130" font-family="Inter, sans-serif" font-size="52" font-weight="300" fill="#ffffff" letter-spacing="2">zylva</text>
+  <text x="390" y="130" font-family="Inter, sans-serif" font-size="52" font-weight="700" fill="#2dd4bf" letter-spacing="2">labs</text>
+  <text x="250" y="170" font-family="Inter, sans-serif" font-size="18" fill="#8a8a94" letter-spacing="12">LABS</text>
+</svg>
