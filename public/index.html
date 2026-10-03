@@ -6,97 +6,36 @@
   <meta name="theme-color" content="#0a0a0a">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>Zylva Labs — Chat sécurisé</title>
+  <title>Zylva Labs — Chat</title>
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="logo.svg">
-  <link rel="apple-touch-icon" href="icons/icon-192.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ============ ÉCRAN 1 : EMAIL ============ -->
-  <div id="emailScreen" class="screen active">
+  <!-- ============ ÉCRAN 1 : PSEUDO ============ -->
+  <div id="loginScreen" class="screen active">
     <div class="auth-box">
       <div class="logo-container">
         <img src="logo.svg" alt="Zylva Labs" class="brand-logo">
       </div>
       <h1 class="brand-name">zylva<span>labs</span></h1>
-      <p class="tagline">Connexion sécurisée par email</p>
+      <p class="tagline">Choisis ton pseudo et discute</p>
 
       <div class="input-group">
-        <label>Adresse email</label>
-        <input type="email" id="emailInput" placeholder="ton@email.com" autocomplete="email" inputmode="email">
+        <label>Pseudo</label>
+        <input type="text" id="usernameInput" placeholder="Ton nom..." maxlength="20" autocomplete="off">
       </div>
 
-      <button id="sendCodeBtn" class="btn-primary">Recevoir le code</button>
-
-      <div class="info-banner">
-        <span>📧</span>
-        <p>Un code à 6 chiffres va t'être envoyé par email. <strong>100% gratuit</strong>, aucune carte requise.</p>
-      </div>
+      <button id="enterBtn" class="btn-primary">Rejoindre le chat</button>
 
       <p class="legal">
-        En continuant, tu acceptes les conditions d'utilisation de Zylva Labs.
+        Aucune inscription. Juste ton pseudo et c'est parti.
       </p>
     </div>
   </div>
 
-  <!-- ============ ÉCRAN 2 : CODE ============ -->
-  <div id="codeScreen" class="screen">
-    <div class="auth-box">
-      <div class="logo-container small">
-        <img src="logo.svg" alt="Zylva Labs" class="brand-logo">
-      </div>
-      <h1 class="brand-name">zylva<span>labs</span></h1>
-      <p class="tagline">Entre le code à 6 chiffres</p>
-
-      <div class="sms-info">
-        Code envoyé à <strong id="displayEmail"></strong>
-      </div>
-
-      <div class="demo-code hidden" id="demoCode">
-        💡 Mode démo — Code : <strong id="shownCode">------</strong>
-      </div>
-
-      <div class="code-inputs" id="codeInputs">
-        <input type="tel" maxlength="1" inputmode="numeric" data-index="0">
-        <input type="tel" maxlength="1" inputmode="numeric" data-index="1">
-        <input type="tel" maxlength="1" inputmode="numeric" data-index="2">
-        <input type="tel" maxlength="1" inputmode="numeric" data-index="3">
-        <input type="tel" maxlength="1" inputmode="numeric" data-index="4">
-        <input type="tel" maxlength="1" inputmode="numeric" data-index="5">
-      </div>
-
-      <button id="verifyBtn" class="btn-primary">Vérifier</button>
-
-      <div class="resend-row">
-        <span class="resend-text">Pas reçu ?</span>
-        <button id="resendBtn" class="btn-link" disabled>Renvoyer (<span id="cooldown">30</span>s)</button>
-      </div>
-
-      <button id="backBtn" class="btn-link">← Changer d'email</button>
-    </div>
-  </div>
-
-  <!-- ============ ÉCRAN 3 : PROFIL ============ -->
-  <div id="profileScreen" class="screen">
-    <div class="auth-box">
-      <div class="logo-container small">
-        <img src="logo.svg" alt="Zylva Labs" class="brand-logo">
-      </div>
-      <h1 class="brand-name">zylva<span>labs</span></h1>
-      <p class="tagline">Choisis ton pseudo</p>
-
-      <div class="input-group">
-        <label>Pseudo affiché</label>
-        <input type="text" id="usernameInput" placeholder="Ton nom..." maxlength="20" autocomplete="nickname">
-      </div>
-
-      <button id="finishBtn" class="btn-primary">Rejoindre Zylva Labs</button>
-    </div>
-  </div>
-
-  <!-- ============ ÉCRAN 4 : CHAT ============ -->
+  <!-- ============ ÉCRAN 2 : CHAT ============ -->
   <div id="appScreen" class="screen">
     <header class="app-header">
       <div class="user-info">
@@ -145,8 +84,6 @@
   <div id="emojiPicker" class="emoji-picker hidden"></div>
   <div id="toast" class="toast hidden"></div>
 
-  <!-- Firebase (optionnel) + App -->
-  <script src="email-config.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
