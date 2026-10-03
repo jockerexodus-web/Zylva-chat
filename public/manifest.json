@@ -1,16 +1,14 @@
 {
-  "name": "Zylva Labs — Chat sécurisé",
+  "name": "Zylva Labs — Chat",
   "short_name": "Zylva Labs",
-  "description": "Messagerie sécurisée avec connexion par email",
+  "description": "Messagerie instantanée simple et rapide",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#0a0a0a",
   "theme_color": "#0a0a0a",
   "lang": "fr",
-  "categories": ["social", "communication"],
   "icons": [
-    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+    { "src": "logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
   ]
-    }
+}
